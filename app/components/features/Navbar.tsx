@@ -39,14 +39,14 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between w-full gap-4 relative py-4 ">
-      <Link href="/" className="flex-1">
+      <a href="/" className="flex-1">
         <Image
           src="/assets/brand/logo.webp"
           alt="logo"
           width={291}
           height={36}
         />
-      </Link>
+      </a>
 
       {/* Desktop Navigation */}
       <div className="flex items-center justify-end gap-8 max-lg:hidden flex-[2]">
