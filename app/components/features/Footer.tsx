@@ -47,39 +47,40 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="mt-16 flex items-center justify-between flex-wrap gap-4">
-        <div className="flex flex-col gap-5">
-          <p className="bg-main-green capitalize px-2 py-1 font-semibold rounded-md w-fit leading-7 text-main-dark text-2xl">
-            Contact Us:
-          </p>
-          <p>
-            Email: <a href="mailto:info@positivus.com">info@positivus.com</a>
-          </p>
-          <p>
-            Phone: <a href="tel:555-567-8901">555-567-8901</a>
-          </p>
-          <p>
-            Address: 1234 Main St
-            <br />
-            Moonstone City, Stardust State 12345
-          </p>
-        </div>
-       <div className="bg-[#292A32] p-5 rounded-[14px] flex flex-col gap-4 w-full max-w-[900px] mx-auto">
-  <input
-    type="email"
-    name="emailForNews"
-    id="emailForNews"
-    className="border border-main-white rounded-md p-4 h-[60px] text-base w-full"
-    placeholder="Email"
-  />
-  <CommonButton
-    title="Subscribe to news"
-    variant="default"
-    buttonClasses="hover:bg-main-dark/50 bg-main-green text-main-dark border-main-dark hover:shadow-sm hover:shadow-main-dark hover:text-main-light transition-all duration-300 text-[18px] sm:text-[16px] w-full h-[60px]"
-  />
+     <div className="mt-16 flex flex-col lg:flex-row items-start justify-between flex-wrap gap-8">
+  <div className="flex flex-col gap-5">
+    <p className="bg-main-green capitalize px-2 py-1 font-semibold rounded-md w-fit leading-7 text-main-dark text-2xl">
+      Contact Us:
+    </p>
+    <p>
+      Email: <a href="mailto:info@positivus.com">info@positivus.com</a>
+    </p>
+    <p>
+      Phone: <a href="tel:555-567-8901">555-567-8901</a>
+    </p>
+    <p>
+      Address: 1234 Main St
+      <br />
+      Moonstone City, Stardust State 12345
+    </p>
+  </div>
+
+  <div className="bg-[#292A32] p-5 rounded-[14px] flex flex-col gap-4 w-full max-w-[500px] mx-auto lg:mx-0 lg:self-end lg:w-[400px]">
+    <input
+      type="email"
+      name="emailForNews"
+      id="emailForNews"
+      className="border border-main-white rounded-md p-4 h-[60px] text-base w-full"
+      placeholder="Email"
+    />
+    <CommonButton
+      title="Subscribe to news"
+      variant="default"
+      buttonClasses="hover:bg-main-dark/50 bg-main-green text-main-dark border-main-dark hover:shadow-sm hover:shadow-main-dark hover:text-main-light transition-all duration-300 text-[18px] sm:text-[16px] w-full h-[60px]"
+    />
+  </div>
 </div>
 
-      </div>
       <hr className="mt-14"/>
       <p className="text-center mt-14">© {new Date().getFullYear()} Positivus. All rights reserved.</p>
     </footer>
