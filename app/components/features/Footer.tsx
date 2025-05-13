@@ -67,8 +67,8 @@ const Footer = () => {
         <div className="bg-[#292A32] py-14 px-10 max-md:px-5 max-md:py-10 rounded-[14px] flex justify-between gap-5 items-center">
           <input
             type="email"
-            name="email"
-            id="email"
+            name="emailForNews"
+            id="emailForNews"
             className="border border-main-white rounded-md px-4 py-2 w-fit h-[68px]"
             placeholder="Email"
           />
