@@ -79,7 +79,7 @@ export function TestmonialsContent() {
 
       {/* Custom Prev - Dots - Next */}
       <div className="mt-8 flex items-center justify-center gap-4">
-        <button onClick={scrollPrev}>
+        <button onClick={scrollPrev} name="prev">
           <ArrowLeft />
         </button>
 
@@ -100,7 +100,7 @@ export function TestmonialsContent() {
           ))}
         </div>
 
-        <button onClick={scrollNext}>
+        <button onClick={scrollNext} name="next">
           <ArrowRight />
         </button>
       </div>
