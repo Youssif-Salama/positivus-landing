@@ -37,7 +37,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="flex items-center justify-end gap-8 text-main-dark">
+        <div className="flex items-center justify-end gap-8 text-main-dark flex-wrap">
           {[
             "/assets/icon/1.webp",
             "/assets/icon/2.webp",
@@ -64,7 +64,7 @@ const Footer = () => {
             Moonstone City, Stardust State 12345
           </p>
         </div>
-        <div className="bg-[#292A32] py-14 px-10 max-md:px-5 max-md:py-10 rounded-[14px] flex justify-between gap-5 items-center">
+        <div className="bg-[#292A32] py-14 px-10 max-md:px-5 max-md:py-10 rounded-[14px] flex justify-between gap-5 items-center flex-wrap">
           <input
             type="email"
             name="emailForNews"
