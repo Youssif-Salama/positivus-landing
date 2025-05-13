@@ -1,0 +1,88 @@
+import Image from "next/image";
+import CommonSectionTag from "../common/CommonSectionTag";
+import CommonButton from "../common/CommonButton";
+
+const navArgs = [
+  { hash: "#about-us", title: "About Us" },
+  { hash: "#services", title: "Services" },
+  { hash: "#case-studies", title: "Case Studies" },
+  { hash: "#process", title: "Process" },
+  { hash: "#contact-us", title: "Contact Us" },
+];
+
+const Footer = () => {
+  return (
+    <footer className="rounded-t-[45px] bg-main-dark px-14 py-12 mt-18 text-white">
+      <div className="flex justify-between">
+        <a href="/">
+          <Image
+            src="/assets/brand/logo-light.webp"
+            alt="logo"
+            width={180}
+            height={29}
+          />
+        </a>
+        <div className="flex items-center  gap-8 max-lg:hidden">
+          <ul className="flex items-center justify-between gap-6">
+            {navArgs.map((arg) => (
+              <li
+                key={arg.title}
+                className="
+            responsiveListFontSize font-normal text-[18px]"
+              >
+                <a href={arg.hash} className="underline">
+                  {arg.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex items-center justify-end gap-8 text-main-dark">
+          {[
+            "/assets/icon/1.webp",
+            "/assets/icon/2.webp",
+            "/assets/icon/3.webp",
+          ].map((icon) => (
+            <Image src={icon} alt="icon" width={30} height={30} key={icon} />
+          ))}
+        </div>
+      </div>
+      <div className="mt-16 flex items-center justify-between flex-wrap gap-4">
+        <div className="flex flex-col gap-5">
+          <h4 className="bg-main-green capitalize px-2 py-1 font-semibold rounded-md w-fit leading-7 text-main-dark">
+            Contact Us:
+          </h4>
+          <p>
+            Email: <a href="mailto:info@positivus.com">info@positivus.com</a>
+          </p>
+          <p>
+            Phone: <a href="tel:555-567-8901">555-567-8901</a>
+          </p>
+          <p>
+            Address: 1234 Main St
+            <br />
+            Moonstone City, Stardust State 12345
+          </p>
+        </div>
+        <div className="bg-[#292A32] py-14 px-10 max-md:px-5 max-md:py-10 rounded-[14px] flex justify-between gap-5 items-center">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className="border border-main-white rounded-md px-4 py-2 w-fit h-[68px]"
+            placeholder="Email"
+          />
+          <CommonButton
+            title="subscribe to news"
+            variant="default"
+            buttonClasses="hover:bg-main-dark/50 bg-main-green text-main-dark border-main-dark hover:shadow-sm hover:shadow-main-dark hover:text-main-light tranition-all duration-300 text-[20px] w-fit h-[68px]"
+          />
+        </div>
+      </div>
+      <hr className="mt-14"/>
+      <p className="text-center mt-14">© {new Date().getFullYear()} Positivus. All rights reserved.</p>
+    </footer>
+  );
+};
+
+export default Footer;
