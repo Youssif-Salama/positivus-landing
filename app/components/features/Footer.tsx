@@ -65,7 +65,7 @@ const Footer = () => {
     </p>
   </div>
 
-  <div className="bg-[#292A32] p-5 rounded-[14px] flex flex-col gap-4 w-full max-w-[500px] mx-auto lg:mx-0 lg:self-end lg:w-[400px]">
+  <div className="bg-[#292A32] p-5 rounded-[14px] flex flex-col gap-4 w-full max-w-[500px] mx-auto md:mx-0 lg:self-end lg:w-[400px]">
     <input
       type="email"
       name="emailForNews"
