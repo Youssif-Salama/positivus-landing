@@ -68,7 +68,7 @@ export function TestmonialsContent() {
                   className="w-full h-auto"
                 />
                 <div className="ml-18 mt-2">
-                  <h4 className="text-main-green">John Doe</h4>
+                  <p className="text-main-green text-xl">John Doe</p>
                   <CommonParagraph paragraphClasses="lg:max-w-[531px] font-normal text-white">Marketing Director at XYZ Corp</CommonParagraph>
                 </div>
               </div>

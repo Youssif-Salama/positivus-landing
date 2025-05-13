@@ -41,12 +41,13 @@ const CommonCard = ({
       </div>
       <div className="flex-1 flex justify-center">
         <Image
-          src={imgSrc}
-          alt="random_image"
-          width={300}
-          height={300}
-          className="rounded-md"
-        />
+  src={imgSrc}
+  alt={imgSrc}
+  layout="intrinsic"
+  width={300}
+  height={300}
+  className="rounded-md"
+/>
       </div>
     </div>
   );

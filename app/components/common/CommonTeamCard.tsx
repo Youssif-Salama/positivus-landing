@@ -13,7 +13,7 @@ const CommonTeamCard = ({employee}:employeeTypes) => {
       <div className="flex gap-4 items-end">
         <Image src={employee.imgSrc} alt={employee.name} width={105} height={105} />
         <div>
-          <h4 className="text-xl font-semibold capitalize">{employee.name}</h4>
+          <p className="text-xl font-semibold capitalize">{employee.name}</p>
           <CommonParagraph>
             <p>{employee.slogan}</p>
           </CommonParagraph>

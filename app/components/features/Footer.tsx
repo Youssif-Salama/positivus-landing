@@ -49,9 +49,9 @@ const Footer = () => {
       </div>
       <div className="mt-16 flex items-center justify-between flex-wrap gap-4">
         <div className="flex flex-col gap-5">
-          <h4 className="bg-main-green capitalize px-2 py-1 font-semibold rounded-md w-fit leading-7 text-main-dark">
+          <p className="bg-main-green capitalize px-2 py-1 font-semibold rounded-md w-fit leading-7 text-main-dark text-2xl">
             Contact Us:
-          </h4>
+          </p>
           <p>
             Email: <a href="mailto:info@positivus.com">info@positivus.com</a>
           </p>
