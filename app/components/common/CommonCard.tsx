@@ -39,16 +39,17 @@ const CommonCard = ({
           <span className={clsx("leading-7 capitalize font-normal text-[20px] max-md:hidden",linkClasses)}>learn more</span>
         </div>
       </div>
-      <div className="flex-1 flex justify-center">
-        <Image
-  src={imgSrc}
-  alt={imgSrc}
-  layout="intrinsic"
-  width={300}
-  height={300}
-  className="rounded-md"
-/>
-      </div>
+      <div className="flex-1 flex justify-center relative">
+  <Image
+    src={imgSrc}
+    alt={imgSrc}
+    width={0} 
+    height={0} 
+    sizes="auto"
+    className="h-auto w-auto"
+  />
+</div>
+
     </div>
   );
 };
