@@ -2,7 +2,7 @@
 import Image from "next/image";
 import CommonButton from "../common/CommonButton";
 import { useState, useRef, useEffect } from "react";
-import { Link, MenuIcon } from "lucide-react";
+import {  MenuIcon } from "lucide-react";
 
 const navArgs = [
   { hash: "#about-us", title: "About Us" },
