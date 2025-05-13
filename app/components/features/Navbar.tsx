@@ -18,10 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target as Node)
-      ) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setOpenMenu(false);
       }
     };
@@ -39,21 +36,24 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between w-full gap-4 relative py-4 ">
-      <a href="/" className="flex-1">
+      <div className="flex-1">
         <Image
           src="/assets/brand/logo.webp"
           alt="logo"
           width={291}
           height={36}
         />
-      </a>
+      </div>
 
       {/* Desktop Navigation */}
       <div className="flex items-center justify-end gap-8 max-lg:hidden flex-[2]">
         <ul className="flex items-center gap-6">
           {navArgs.map((arg) => (
-            <li key={arg.title} className="
-            responsiveListFontSize font-normal leading-7">
+            <li
+              key={arg.title}
+              className="
+            responsiveListFontSize font-normal leading-7"
+            >
               <a href={arg.hash}>{arg.title}</a>
             </li>
           ))}
@@ -67,10 +67,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <div className="lg:hidden flex-1 flex items-center justify-end">
-        <button
-          aria-label="Toggle Menu"
-          onClick={() => setOpenMenu(!openMenu)}
-        >
+        <button aria-label="Toggle Menu" onClick={() => setOpenMenu(!openMenu)}>
           <MenuIcon />
         </button>
       </div>
