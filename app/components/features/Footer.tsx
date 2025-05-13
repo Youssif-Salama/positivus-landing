@@ -64,20 +64,21 @@ const Footer = () => {
             Moonstone City, Stardust State 12345
           </p>
         </div>
-        <div className="bg-[#292A32] py-14 px-10 max-md:px-5 max-md:py-10 rounded-[14px] flex justify-between gap-5 items-center flex-wrap">
-          <input
-            type="email"
-            name="emailForNews"
-            id="emailForNews"
-            className="border border-main-white rounded-md px-4 py-2 w-fit h-[68px]"
-            placeholder="Email"
-          />
-          <CommonButton
-            title="subscribe to news"
-            variant="default"
-            buttonClasses="hover:bg-main-dark/50 bg-main-green text-main-dark border-main-dark hover:shadow-sm hover:shadow-main-dark hover:text-main-light tranition-all duration-300 text-[20px] w-fit h-[68px]"
-          />
-        </div>
+       <div className="bg-[#292A32] p-5 rounded-[14px] flex flex-col gap-4 w-full max-w-[900px] mx-auto">
+  <input
+    type="email"
+    name="emailForNews"
+    id="emailForNews"
+    className="border border-main-white rounded-md p-4 h-[60px] text-base w-full"
+    placeholder="Email"
+  />
+  <CommonButton
+    title="Subscribe to news"
+    variant="default"
+    buttonClasses="hover:bg-main-dark/50 bg-main-green text-main-dark border-main-dark hover:shadow-sm hover:shadow-main-dark hover:text-main-light transition-all duration-300 text-[18px] sm:text-[16px] w-full h-[60px]"
+  />
+</div>
+
       </div>
       <hr className="mt-14"/>
       <p className="text-center mt-14">© {new Date().getFullYear()} Positivus. All rights reserved.</p>
