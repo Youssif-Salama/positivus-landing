@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import clsx from "clsx";
 
 interface CommonButtonTypes {
@@ -17,8 +16,7 @@ interface CommonButtonTypes {
     | undefined;
 }
 const CommonButton = ({ title, variant, restClasses,  buttonClasses }: CommonButtonTypes) => {
-  let titleArr = title.trim().split(" ");
-  console.log(titleArr);
+  const titleArr = title.trim().split(" ");
 
   return (
     <Button variant={variant} className={clsx(buttonClasses,"px-9 py-6 leading-7 font-normal")}>

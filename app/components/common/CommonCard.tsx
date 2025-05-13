@@ -14,9 +14,9 @@ const CommonCard = ({
   titiles: string[];
   imgSrc: string;
   restClasses?: string;
-  iconClasses?: any;
-  linkClasses?: any;
-  titileClasses?:any
+  iconClasses?: string;
+  linkClasses?: string;
+  titileClasses?:string
 }) => {
   return (
     <div

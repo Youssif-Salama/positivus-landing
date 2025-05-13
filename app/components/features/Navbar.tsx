@@ -2,7 +2,7 @@
 import Image from "next/image";
 import CommonButton from "../common/CommonButton";
 import { useState, useRef, useEffect } from "react";
-import { MenuIcon } from "lucide-react";
+import { Link, MenuIcon } from "lucide-react";
 
 const navArgs = [
   { hash: "#about-us", title: "About Us" },
@@ -39,14 +39,14 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between w-full gap-4 relative py-4 ">
-      <a href="/" className="flex-1">
+      <Link href="/" className="flex-1">
         <Image
           src="/assets/brand/logo.webp"
           alt="logo"
           width={291}
           height={36}
         />
-      </a>
+      </Link>
 
       {/* Desktop Navigation */}
       <div className="flex items-center justify-end gap-8 max-lg:hidden flex-[2]">

@@ -12,7 +12,7 @@ const ContactUs = () => {
         <CommonSectionTag title="Contact us" />
         <CommonParagraph paragraphClasses="max-w-[580px] text-[18px]">
           <p>
-            Connect with Us: Let's Discuss Your
+            Connect with Us: Let{"'"}s Discuss Your
             <br /> Digital Marketing Needs
           </p>
         </CommonParagraph>

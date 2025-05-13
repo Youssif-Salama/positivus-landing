@@ -1,6 +1,6 @@
 import Image from "next/image";
-import CommonSectionTag from "../common/CommonSectionTag";
 import CommonButton from "../common/CommonButton";
+import Link from "next/link";
 
 const navArgs = [
   { hash: "#about-us", title: "About Us" },
@@ -14,14 +14,14 @@ const Footer = () => {
   return (
     <footer className="rounded-t-[45px] bg-main-dark px-14 py-12 mt-18 text-white">
       <div className="flex justify-between">
-        <a href="/">
+        <Link href="/">
           <Image
             src="/assets/brand/logo-light.webp"
             alt="logo"
             width={180}
             height={29}
           />
-        </a>
+        </Link>
         <div className="flex items-center  gap-8 max-lg:hidden">
           <ul className="flex items-center justify-between gap-6">
             {navArgs.map((arg) => (
